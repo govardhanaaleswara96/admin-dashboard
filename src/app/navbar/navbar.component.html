@@ -1,0 +1,16 @@
+<div class="nav">
+    <div id="mySidebar" class="sidebar">
+        <h4 href="javascript:void(0)" class="closebtn" (click)="closeNav()">×</h4>
+        <a routerLink="/gateways">Gateways</a>
+        <a routerLink="/network">Networks</a>
+        <a routerLink="/profile">Profile</a>
+    </div>
+
+    <div id="main">
+        <button class="openbtn" (click)="openNav()">☰</button>
+    </div>
+    <div class="head">
+        <h3 class="mt-3 text-white">{{title}}</h3>
+    </div>
+</div>
+<router-outlet></router-outlet>
