@@ -1,6 +1,31 @@
 <app-navbar></app-navbar>
 <div class="container-fluid">
-    <div>
-        <p>Gate Ways</p>
+    <div class="table-responsive mt-5">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">S.no</th>
+                    <th scope="col">Gateway ID</th>
+                    <th scope="col">Gateway Ip</th>
+                    <th scope="col">NetWork Name/ ID</th>
+                    <th scope="col">Mechine name</th>
+                    <th scope="col">mechine purpose</th>
+                    <th scope="col">Mechine IP</th>
+                    <th scope="col">Company Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let x of table;index as i;">
+                    <th scope="row">{{i+1}}</th>
+                    <td>{{x.GatewayID}}</td>
+                    <td>{{x.GatewayIP}}</td>
+                    <td>{{x.NetWorkName}}</td>
+                    <td>{{x.Mechinename}}</td>
+                    <td>{{x.mechinepurpose}}</td>
+                    <td>{{x.MechineIP}}</td>
+                    <td>{{x.CompanyName}}</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>
