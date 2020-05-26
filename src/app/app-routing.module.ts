@@ -14,7 +14,7 @@ const routes: Routes = [
   {
     path: 'gateways',
     component: GatewayComponent,
-    data: { title: 'GateWays' },
+    data: { title: 'Gate Ways' },
   },
   {
     path: 'network',
