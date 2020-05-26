@@ -1,2 +1,34 @@
 <app-navbar></app-navbar>
-<p>network works!</p>
+<div class="container-fluid">
+    <div class="row mt-3 justify-content-center">
+        <div class="col-12 col-sm-12 col-lg-4">
+            <button class="totalbutton">Total Connected Network</button>
+        </div>
+        <div class="col-12 col-sm-12 col-lg-4">
+            <button class="countbutton">Counts here</button>
+        </div>
+        <div class="col-12 col-sm-12 col-lg-4">
+            <button class="creatbutton">Creat New network</button>
+        </div>
+    </div>
+    <div class="table-responsive mt-3">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">S.no</th>
+                    <th scope="col">NetWork ID</th>
+                    <th scope="col">NetWork Name</th>
+                    <th scope="col">Connected Devices</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let x of table;index as i;">
+                    <th scope="row">{{i+1}}</th>
+                    <td>{{x.networkid}}</td>
+                    <td>{{x.networkname}}</td>
+                    <td>{{x.ConnectedDevices}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

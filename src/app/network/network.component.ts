@@ -6,10 +6,38 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./network.component.css']
 })
 export class NetworkComponent implements OnInit {
+  table: any;
 
   constructor() { }
 
   ngOnInit(): void {
+    this.table = [
+      {
+        networkid: '1234',
+        networkname: 'local',
+        ConnectedDevices: 'mobile'
+      },
+      {
+        networkid: '1234',
+        networkname: 'local',
+        ConnectedDevices: 'mobile'
+      },
+      {
+        networkid: '1234',
+        networkname: 'local',
+        ConnectedDevices: 'mobile'
+      },
+      {
+        networkid: '1234',
+        networkname: 'local',
+        ConnectedDevices: 'mobile'
+      },
+      {
+        networkid: '1234',
+        networkname: 'local',
+        ConnectedDevices: 'mobile'
+      },
+    ];
   }
 
 }

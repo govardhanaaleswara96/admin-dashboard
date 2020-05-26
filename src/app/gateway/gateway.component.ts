@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gateway.component.css']
 })
 export class GatewayComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }
